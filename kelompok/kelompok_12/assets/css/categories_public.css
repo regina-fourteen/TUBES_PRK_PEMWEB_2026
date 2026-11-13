@@ -1,4 +1,3 @@
-
 /* ==========================================
    SEHATIN - MODERN CATEGORY DESIGN
    Modern Healthcare Editorial
@@ -13,8 +12,8 @@
     --ct-border: #e3ece8;
     --ct-surface: #ffffff;
     --ct-radius: 18px;
-    --ct-shadow: 0 5px 22px rgba(15,70,55,.055);
-    --ct-shadow-hover: 0 14px 32px rgba(15,70,55,.12);
+    --ct-shadow: 0 5px 22px rgba(15, 70, 55, .055);
+    --ct-shadow-hover: 0 14px 32px rgba(15, 70, 55, .12);
 
     padding-top: 42px;
     padding-bottom: 75px;
@@ -42,6 +41,7 @@
         opacity: 0;
         transform: translateY(18px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -91,12 +91,12 @@
 
 .ct-btn-outline {
     background: transparent;
-    border-color: rgba(255,255,255,.6);
+    border-color: rgba(255, 255, 255, .6);
     color: #fff;
 }
 
 .ct-btn-outline:hover {
-    background: rgba(255,255,255,.12);
+    background: rgba(255, 255, 255, .12);
     color: #fff;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .ct-stat:hover {
-    border-color: rgba(15,157,120,.35);
+    border-color: rgba(15, 157, 120, .35);
     transform: translateY(-3px);
 }
 
@@ -178,11 +178,10 @@
     padding: 34px 38px;
     border-radius: 20px;
     background:
-        radial-gradient(circle at 90% 10%,
-        rgba(255,255,255,.17), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(255, 255, 255, .17), transparent 30%),
         linear-gradient(120deg, #0f9d78, #0b7a5c);
     color: #fff;
-    box-shadow: 0 12px 28px rgba(15,157,120,.16);
+    box-shadow: 0 12px 28px rgba(15, 157, 120, .16);
 }
 
 .ct-today::after {
@@ -192,7 +191,7 @@
     height: 220px;
     right: 90px;
     bottom: -150px;
-    border: 35px solid rgba(255,255,255,.08);
+    border: 35px solid rgba(255, 255, 255, .08);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -204,7 +203,7 @@
     display: grid;
     place-items: center;
     border-radius: 20px;
-    background: rgba(255,255,255,.17);
+    background: rgba(255, 255, 255, .17);
     font-size: 2.4rem;
 }
 
@@ -354,15 +353,16 @@
     border: 1px solid var(--ct-border);
     border-radius: 17px;
     box-shadow: var(--ct-shadow);
-    transition: transform .3s ease,
-                box-shadow .3s ease,
-                border-color .3s ease;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
 }
 
 .ct-card:hover,
 .ct-card:focus-within {
     transform: translateY(-6px);
-    border-color: rgba(15,157,120,.38);
+    border-color: rgba(15, 157, 120, .38);
     box-shadow: var(--ct-shadow-hover);
 }
 
@@ -380,19 +380,19 @@
 /* Soft green editorial backgrounds */
 
 .ct-tone-0 .ct-card-media {
-    background: linear-gradient(135deg,#e6f6f0,#c9eee0);
+    background: linear-gradient(135deg, #e6f6f0, #c9eee0);
 }
 
 .ct-tone-1 .ct-card-media {
-    background: linear-gradient(135deg,#e4f3ed,#cce9dd);
+    background: linear-gradient(135deg, #e4f3ed, #cce9dd);
 }
 
 .ct-tone-2 .ct-card-media {
-    background: linear-gradient(135deg,#eaf5ef,#d2eadd);
+    background: linear-gradient(135deg, #eaf5ef, #d2eadd);
 }
 
 .ct-tone-3 .ct-card-media {
-    background: linear-gradient(135deg,#e0f2eb,#c1e7d7);
+    background: linear-gradient(135deg, #e0f2eb, #c1e7d7);
 }
 
 .ct-card-media::before {
@@ -400,7 +400,7 @@
     position: absolute;
     width: 190px;
     height: 190px;
-    border: 1px solid rgba(15,157,120,.12);
+    border: 1px solid rgba(15, 157, 120, .12);
     border-radius: 50%;
 }
 
@@ -409,7 +409,7 @@
     position: absolute;
     width: 135px;
     height: 135px;
-    border: 1px solid rgba(15,157,120,.12);
+    border: 1px solid rgba(15, 157, 120, .12);
     border-radius: 50%;
 }
 
@@ -423,8 +423,8 @@
     display: grid;
     place-items: center;
     border-radius: 22px;
-    background: rgba(255,255,255,.82);
-    box-shadow: 0 8px 20px rgba(15,70,55,.08);
+    background: rgba(255, 255, 255, .82);
+    box-shadow: 0 8px 20px rgba(15, 70, 55, .08);
     font-size: 2.7rem;
     line-height: 1;
     transition: transform .3s ease;
@@ -446,9 +446,9 @@
     gap: 6px;
     max-width: calc(100% - 28px);
     padding: 7px 12px;
-    border: 1px solid rgba(15,157,120,.12);
+    border: 1px solid rgba(15, 157, 120, .12);
     border-radius: 7px;
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, .9);
     color: var(--ct-primary-dark);
     font-size: .75rem;
     font-weight: 600;
@@ -626,7 +626,7 @@
     padding: 38px;
     overflow: hidden;
     border-radius: 19px;
-    background: linear-gradient(120deg,#14302a,#1f4a40);
+    background: linear-gradient(120deg, #14302a, #1f4a40);
     color: #fff;
 }
 
@@ -637,7 +637,7 @@
     height: 230px;
     right: 12%;
     top: -170px;
-    border: 35px solid rgba(255,255,255,.06);
+    border: 35px solid rgba(255, 255, 255, .06);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -679,7 +679,7 @@
 
 @media (max-width: 991.98px) {
     .ct-grid {
-        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .ct-today {
@@ -816,3 +816,59 @@
         transform: none;
     }
 }
+
+
+/* ==========================================
+   HERO / HEADER KATEGORI
+   ========================================== */
+
+.page-articles .hero {
+    padding: 65px 0 60px;
+    background: linear-gradient(120deg, #e6f6f0, #f5fbf8);
+}
+
+.page-articles .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-articles .hero .eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0f9d78;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.page-articles .hero h1 {
+    margin: 0 0 12px;
+    color: #14302a;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+}
+
+.page-articles .hero p {
+    max-width: 650px;
+    margin: 0;
+    color: #647571;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+    .page-articles .hero {
+        padding: 45px 0 40px;
+    }
+
+    .page-articles .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-articles .hero p {
+        font-size: 0.92rem;
+    }
+}
+
