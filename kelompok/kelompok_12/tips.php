@@ -101,15 +101,15 @@ $bodyClass = 'page-articles';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-content">
-            <span class="eyebrow">JELAJAHI SEHATIN</span>
-            <h1>Tips Kesehatan Sehatin</h1>
-            <p>Temukan berbagai tips sederhana untuk menjaga kesehatan dan pola hidup sehat.</p>
-        </div>
-    </section>
+<!-- HERO / HEADER TIPS -->
+<section class="tp-hero">
+    <div class="container tp-hero-content">
+        <span class="tp-eyebrow">JELAJAHI SEHATIN</span>
+        <h1>Tips Kesehatan Sehatin</h1>
+        <p>Temukan berbagai tips sederhana untuk menjaga kesehatan dan pola hidup sehat.</p>
+    </div>
+</section>
+            
 
     <main class="container tp-main">
 
