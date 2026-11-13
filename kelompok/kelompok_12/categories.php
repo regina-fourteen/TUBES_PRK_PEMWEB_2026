@@ -36,16 +36,6 @@ function likeEscape($text) {
     return str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], $text);
 }
 
-// Ikon kategori (sementara, berdasarkan ID)
-function kategoriIkon($id) {
-    $icons = [
-        1 => '🥗',
-        2 => '🧠',
-        3 => '🏃',
-    ];
-    return $icons[(int) $id] ?? '📚';
-}
-
 // Deskripsi cadangan jika di database masih kosong
 function kategoriDeskripsi($id, $description) {
     if (trim((string) $description) !== '') {
@@ -143,7 +133,6 @@ try {
 
         if ($selectedCategory) {
             $catId = (int) $selectedCategory['id'];
-            $selectedCategory['icon']        = kategoriIkon($catId);
             $selectedCategory['description'] = kategoriDeskripsi($catId, $selectedCategory['description'] ?? '');
 
             // Sortir (whitelist)
@@ -386,7 +375,6 @@ include 'includes/navbar.php';
                 <?php foreach ($articles as $i => $article): ?>
                     <article class="ct-card ct-tone-<?= (int) $selectedCategory['id'] % 4 ?>" data-reveal style="--d: <?= ($i % 3) * 90 ?>ms">
                         <div class="ct-card-media">
-                            <span class="ct-emoji" aria-hidden="true"><?= e($selectedCategory['icon']) ?></span>
                             <span class="ct-chip"><?= e($selectedCategory['name']) ?></span>
                         </div>
 
@@ -453,7 +441,6 @@ include 'includes/navbar.php';
         <?php if ($popular && $q === ''): ?>
             <!-- KATEGORI PILIHAN -->
             <section class="ct-today" data-reveal>
-                <div class="ct-today-icon" aria-hidden="true"><?= e(kategoriIkon($popular['id'])) ?></div>
                 <div class="ct-today-text">
                     <span class="ct-today-label">Kategori Pilihan &middot; <?= (int) $popular['article_count'] ?> artikel</span>
                     <h3><?= e($popular['name']) ?></h3>
@@ -500,7 +487,6 @@ include 'includes/navbar.php';
                 <?php foreach ($categories as $i => $category): ?>
                     <article class="ct-card ct-tone-<?= (int) $category['id'] % 4 ?>" data-reveal style="--d: <?= ($i % 3) * 90 ?>ms">
                         <div class="ct-card-media">
-                            <span class="ct-emoji" aria-hidden="true"><?= e(kategoriIkon($category['id'])) ?></span>
                             <span class="ct-chip"><i class="bi bi-grid"></i> Kategori</span>
                         </div>
 

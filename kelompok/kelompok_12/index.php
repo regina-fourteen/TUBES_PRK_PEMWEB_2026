@@ -35,24 +35,22 @@ include 'includes/navbar.php';
         <div class="col-lg-8">
             <div class="promo-banner-left h-100">
                 <div class="hero-content">
-                    <span class="hero-eyebrow"><span class="eyebrow-dot"></span> Teman sehat setiap hari</span>
+                    </span> Teman sehat setiap hari</span>
                     <h1>Mulai Hidup Lebih Sehat,<br><span>Mulai dari Sehatin.</span></h1>
                     <p>Temukan informasi kesehatan yang mudah dipahami, tips sederhana, dan wawasan untuk membantu kamu menjaga kesehatan.</p>
                     <div class="hero-actions">
                         <a href="articles.php" class="btn btn-hero-primary">Jelajahi Artikel <span aria-hidden="true">→</span></a>
                         <a href="#home-features" class="btn btn-hero-ghost">Jelajahi Sehatin</a>
                     </div>
-                    <div class="hero-note"><span aria-hidden="true">✦</span> Informasi kesehatan dalam satu tempat</div>
+                    <div class="hero-note">Informasi kesehatan dalam satu tempat</div>
                 </div>
                 <div class="hero-decoration hero-decoration-one"></div>
                 <div class="hero-decoration hero-decoration-two"></div>
-                <div class="hero-leaf" aria-hidden="true">✳</div>
             </div>
         </div>
 
         <div class="col-lg-4">
             <div class="promo-banner-right h-100">
-                <div class="tips-icon" aria-hidden="true">✦</div>
                 <span class="tips-label">Ruang inspirasi</span>
                 <h2>Langkah kecil,<br>hidup lebih sehat.</h2>
                 <p>Bangun kebiasaan baik lewat tips kebugaran, pola makan, dan perawatan diri yang bisa kamu terapkan setiap hari.</p>
@@ -70,13 +68,11 @@ include 'includes/navbar.php';
                 <h2>Solusi Kesehatan di Tanganmu</h2>
                 <p>Akses informasi dan topik kesehatan yang kamu butuhkan.</p>
             </div>
-            <span class="section-heading-mark" aria-hidden="true">✳</span>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
             <div class="col">
                 <a href="articles.php" class="feature-card feature-card-mint h-100">
-                    <span class="feature-icon" aria-hidden="true">▤</span>
                     <span class="feature-card-arrow" aria-hidden="true">↗</span>
                     <h3>Daftar Artikel Lengkap</h3>
                     <p>Baca berbagai informasi dan wawasan kesehatan terkini.</p>
@@ -86,7 +82,6 @@ include 'includes/navbar.php';
 
             <div class="col">
                 <a href="tips.php" class="feature-card feature-card-peach h-100">
-                    <span class="feature-icon" aria-hidden="true">☀</span>
                     <span class="feature-card-arrow" aria-hidden="true">↗</span>
                     <h3>Tips &amp; Gaya Hidup Sehat</h3>
                     <p>Temukan panduan praktis untuk menjaga kebugaran tubuh.</p>
@@ -96,7 +91,6 @@ include 'includes/navbar.php';
 
             <div class="col">
                 <a href="search.php" class="feature-card feature-card-lilac h-100">
-                    <span class="feature-icon" aria-hidden="true">⌕</span>
                     <span class="feature-card-arrow" aria-hidden="true">↗</span>
                     <h3>Pencarian Informasi</h3>
                     <p>Cari topik kesehatan yang ingin kamu ketahui dengan mudah.</p>
@@ -111,7 +105,6 @@ include 'includes/navbar.php';
                 ?>
                 <div class="col">
                     <a href="categories.php?id=<?= (int)$cat['id'] ?>" class="feature-card <?= $categoryTheme ?> h-100">
-                        <span class="feature-icon" aria-hidden="true">＋</span>
                         <span class="feature-card-arrow" aria-hidden="true">↗</span>
                         <h3><?= htmlspecialchars($cat['name'], ENT_QUOTES, 'UTF-8') ?></h3>
                         <p>Jelajahi artikel dan informasi seputar topik ini.</p>
@@ -168,7 +161,6 @@ include 'includes/navbar.php';
             <?php else: ?>
                 <div class="col-12">
                     <div class="empty-articles">
-                        <span aria-hidden="true">▤</span>
                         <h3>Belum ada artikel terbaru</h3>
                         <p>Artikel yang dipublikasikan akan muncul di bagian ini.</p>
                     </div>
@@ -185,7 +177,6 @@ include 'includes/navbar.php';
             <p>Luangkan waktu sejenak untuk membaca dan mengenali kebutuhan kesehatanmu.</p>
         </div>
         <a href="articles.php" class="btn btn-cta-bottom">Temukan Informasi <span aria-hidden="true">→</span></a>
-        <span class="cta-decoration" aria-hidden="true">✳</span>
     </section>
 
 </main>

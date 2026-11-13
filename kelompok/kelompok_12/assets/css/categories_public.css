@@ -196,17 +196,6 @@
     pointer-events: none;
 }
 
-.ct-today-icon {
-    flex: 0 0 76px;
-    width: 76px;
-    height: 76px;
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, .17);
-    font-size: 2.4rem;
-}
-
 .ct-today-text {
     flex: 1;
     min-width: 0;
@@ -370,7 +359,7 @@
 
 .ct-card-media {
     position: relative;
-    height: 145px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,34 +402,14 @@
     border-radius: 50%;
 }
 
-/* ICON */
-
-.ct-emoji {
-    position: relative;
-    z-index: 1;
-    width: 76px;
-    height: 76px;
-    display: grid;
-    place-items: center;
-    border-radius: 22px;
-    background: rgba(255, 255, 255, .82);
-    box-shadow: 0 8px 20px rgba(15, 70, 55, .08);
-    font-size: 2.7rem;
-    line-height: 1;
-    transition: transform .3s ease;
-}
-
-.ct-card:hover .ct-emoji {
-    transform: scale(1.1) rotate(-5deg);
-}
-
 /* CATEGORY LABEL */
 
 .ct-chip {
     position: absolute;
     z-index: 2;
-    top: 14px;
+    top: 50%;
     left: 14px;
+    transform: translateY(-50%);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -687,7 +656,7 @@
     }
 
     .ct-today .ct-btn-light {
-        margin-left: 101px;
+        margin-left: 0;
     }
 }
 
@@ -742,13 +711,6 @@
         gap: 16px;
     }
 
-    .ct-today-icon {
-        width: 60px;
-        height: 60px;
-        flex-basis: 60px;
-        font-size: 1.9rem;
-    }
-
     .ct-today-text h3 {
         font-size: 1.3rem;
     }
@@ -780,7 +742,7 @@
     }
 
     .ct-card-media {
-        height: 135px;
+        height: 72px;
     }
 
     .ct-card-body {
@@ -805,7 +767,6 @@
 
     .ct-card,
     .ct-stat,
-    .ct-emoji,
     .ct-link i {
         transition: none;
     }
@@ -871,4 +832,3 @@
         font-size: 0.92rem;
     }
 }
-

@@ -32,12 +32,6 @@ function likeEscape($text) {
     return str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], $text);
 }
 
-// Ikon kategori (sama seperti di categories.php)
-function kategoriIkon($id) {
-    $icons = [1 => '🥗', 2 => '🧠', 3 => '🏃'];
-    return $icons[(int) $id] ?? '📚';
-}
-
 // URL dengan mempertahankan pencarian, kategori & sortir
 function buildUrl($overrides = []) {
     $params = array_merge($_GET, $overrides);
@@ -307,7 +301,6 @@ include 'includes/navbar.php';
             <!-- ARTIKEL PILIHAN -->
             <article class="ar-featured ar-tone-<?= (int) $featured['category_id'] % 4 ?>" data-reveal>
                 <div class="ar-featured-media">
-                    <span class="ar-emoji" aria-hidden="true"><?= e(kategoriIkon($featured['category_id'])) ?></span>
                     <span class="ar-chip"><?= e($featured['category']) ?></span>
                 </div>
                 <div class="ar-featured-body">
@@ -337,7 +330,6 @@ include 'includes/navbar.php';
                 <?php foreach ($articles as $i => $article): ?>
                     <article class="ar-card ar-tone-<?= (int) $article['category_id'] % 4 ?>" data-reveal style="--d: <?= ($i % 3) * 90 ?>ms">
                         <div class="ar-card-media">
-                            <span class="ar-emoji" aria-hidden="true"><?= e(kategoriIkon($article['category_id'])) ?></span>
                             <span class="ar-chip"><?= e($article['category']) ?></span>
                         </div>
 
